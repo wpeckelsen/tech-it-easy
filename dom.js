@@ -199,7 +199,30 @@ sumOfSalesDiv.textContent = sumOfSales;
 //     Opdracht 2c: Hoeveel tv's heeft Tech It Easy ingekocht? Schrijf een script dat dit berekent. Log de uitkomst in de console.
 
 
+const totalBoughtArray = inventory2.map( (boughtTV) => {
+    return boughtTV.originalStock;
+});
+
+let sumOfBoughtTVs = 0;
+
+for (let i= 0; i <totalBoughtArray.length; i++){
+    sumOfBoughtTVs += totalBoughtArray[i];
+}
+
+console.log(sumOfBoughtTVs);
+
 
 
 // Opdracht 2d: Zorg ervoor dat dit aantal in het blauw wordt weergegeven op de pagina.
+
+const sumOfBoughtDiv = document.getElementById('boughtSection');
+sumOfBoughtDiv.textContent = + sumOfBoughtTVs;
+
 //     Opdracht 2e: Geef in het rood weer hoeveel tv's er nog verkocht moeten worden.
+
+const leftOver = sumOfBoughtTVs - sumOfSales;
+
+const leftOverDiv = document.getElementById('leftOverSection')
+
+leftOverDiv.textContent = leftOver;
+
