@@ -1,5 +1,5 @@
 // VOORRAAD ARRAY MET TV'S
-const inventory = [
+const inventory1 = [
      {
           type: '43PUS6504/12',
           name: '4K TV',
@@ -168,7 +168,7 @@ const inventory = [
 // in de console.
 
 
-const namesOfTVs = inventory.map ((nameofTV) => {
+const namesOfTVs = inventory1.map ((nameofTV) => {
      return nameofTV.name;
 });
 
@@ -180,7 +180,7 @@ console.log(namesOfTVs);
 //     Opdracht 1b: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
 //     ' + 'Log de uitkomst in de console.
 
-const soldOutTVs = inventory.filter ((soldOutTV) => {
+const soldOutTVs = inventory1.filter ((soldOutTV) => {
      return soldOutTV.originalStock === soldOutTV.sold;
 });
 
@@ -189,7 +189,7 @@ console.log("//////////////////")
 
 // Opdracht 1c: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
 
-const AmbiLightTVs = inventory.filter ( (AmbiLightTV) => {
+const AmbiLightTVs = inventory1.filter ( (AmbiLightTV) => {
      return AmbiLightTV.options.ambiLight === true;
 
 });
@@ -201,7 +201,7 @@ console.log("++++++++++++++++++++++++++++++++");
 // Opdracht 1d: Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert. ' +
 // 'Log de uitkomst in de console.
 
-const priceofTVs = inventory.sort( (a, b) => {
+const priceofTVs = inventory1.sort( (a, b) => {
      return a.price - b.price ;
 });
 
