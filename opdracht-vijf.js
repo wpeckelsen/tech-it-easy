@@ -222,21 +222,4 @@ console.log(fullInfo)
 
 // 5e
 
-
-let lengthInventoryArray = inventory4.length;
-
-
-for (let i = 0; i <lengthInventoryArray.length; i++) {
-  lengthInventoryArray += lengthInventoryArray * 3;}
-
-console.log(lengthInventoryArray);
-
-
-
-
-const fullInfoB = singleTVItemFunction(0)
-    + " " + " " +
-    priceOfTVFunction(0)
-    + " " + " " +
-    screenSizeofTVFunction(0);
-
+//kwam er niet uit

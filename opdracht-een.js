@@ -185,7 +185,7 @@ const soldOutTVs = inventory1.filter ((soldOutTV) => {
 });
 
 console.log(soldOutTVs);
-console.log("//////////////////")
+
 
 // Opdracht 1c: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
 
@@ -196,7 +196,7 @@ const AmbiLightTVs = inventory1.filter ( (AmbiLightTV) => {
 
 console.log(AmbiLightTVs);
 
-console.log("++++++++++++++++++++++++++++++++");
+
 
 // Opdracht 1d: Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert. ' +
 // 'Log de uitkomst in de console.
