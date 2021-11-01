@@ -172,44 +172,16 @@ const brands = inventory3.map( (inventory) => {
   return inventory.brand
 
 });
+
 console.log(brands)
-
-
-
-
-// Zorg ervoor dat dit ook zou werken als we 200 tv's in onze array zouden hebben staan.
-// Dat er dubbele namen in zitten, is niet erg.
-
-
-
-
 
 
 // Opdracht 4b: Schrijf de code uit 4a om naar een functie die een array met tv-objecten verwacht.
 
 
-/*>> ik heb geen idee of dit goed is. weet niet wat er bedoeld wordt met een functie die een array verwacht. ja, elke functie
-kan een array verwachten. kijk maar, hier stop ik een array van de vorige vraag erin. */
-
-function arrayExpecter() {
-  return brands;
-}
-console.log(arrayExpecter())
-
-///tweede, en nu serieuze poging. map() methode binnen een functie gezet. geen idee wat we hiermee opschieten.
-function tvObjectFunction() {
-
-  const tvObjectArray = inventory3.map( (inventory) => {
-    return inventory.type
-
-  });
-
-  return tvObjectArray;
+function tvObjectFunction(inventoryNumber) {
+  return inventory3[inventoryNumber];
 }
 
-const tvObjectConst = tvObjectFunction()
-
-console.log(tvObjectConst)
-
-// Het is handig om onze scripts als functies op te zetten, zodat we ze gemakkelijk kunnen hergebruiken.
-// Tip: vergeet niet deze functie -declaratie aan te roepen!
+console.log(tvObjectFunction(2))
+console.log(tvObjectFunction(4))
