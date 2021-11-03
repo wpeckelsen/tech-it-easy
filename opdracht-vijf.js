@@ -1,6 +1,6 @@
-/*
-VOORRAAD ARRAY MET TV'S.
-const inventory = [
+
+///VOORRAAD ARRAY MET TV'S.
+const inventory4 = [
   {
     type: '43PUS6504/12',
     name: '4K TV',
@@ -161,4 +161,65 @@ const inventory = [
     originalStock: 10,
     sold: 8,
   },
-];*/
+];
+
+//    Opdracht 5a naam van de tv
+
+function singleTVItemFunction(inventoryNumber) {
+  return inventory4[inventoryNumber].brand + " " + inventory4[inventoryNumber].type + " - " + inventory4[inventoryNumber].name
+}
+
+console.log(singleTVItemFunction(5))
+console.log(singleTVItemFunction(2))
+console.log(singleTVItemFunction(1))
+console.log(singleTVItemFunction(7))
+
+
+
+
+//    opdracht 5b prijs
+
+
+
+function priceOfTVFunction (inventoryNumber) {
+  return "€" + inventory4[inventoryNumber].price + ",-";
+}
+
+console.log(priceOfTVFunction(0))
+
+
+
+//    opdracht 5c screensizes
+
+let screenSizeArray = screenSizeofTVFunction(0);
+
+function screenSizeofTVFunction(inventoryNumber) {
+  return inventory4[inventoryNumber].availableSizes
+}
+
+for (let i = 0; i < screenSizeArray.length; i++) {
+    screenSizeArray[i] += " inch (" + (screenSizeArray[i] * 2.54) + " cm) | ";
+}
+
+
+
+
+
+console.log(screenSizeofTVFunction(0))
+
+
+
+//    5d informatie 1 TV
+
+const fullInfo = singleTVItemFunction(0)
+    + " " + " " +
+    priceOfTVFunction(0)
+    + " " + " " +
+    screenSizeofTVFunction(0);
+
+
+console.log(fullInfo)
+
+// 5e
+
+//kwam er niet uit

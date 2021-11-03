@@ -1,6 +1,6 @@
-/*
-VOORRAAD ARRAY MET TV'S.
-const inventory = [
+
+//VOORRAAD ARRAY MET TV'S.
+const inventory3 = [
   {
     type: '43PUS6504/12',
     name: '4K TV',
@@ -161,4 +161,27 @@ const inventory = [
     originalStock: 10,
     sold: 8,
   },
-];*/
+];
+
+
+//
+// Opdracht 3 - Array methoden en functies
+// Opdracht 3a: Gebruik een array-methode om alle tv merken (zoals Philips, NIKKEI, etc.) in een lijst op de pagina weer te geven.
+
+const brands = inventory3.map( (inventory) => {
+  return inventory.brand
+
+});
+
+console.log(brands)
+
+
+// Opdracht 4b: Schrijf de code uit 4a om naar een functie die een array met tv-objecten verwacht.
+
+
+function tvObjectFunction(inventoryNumber) {
+  return inventory3[inventoryNumber];
+}
+
+console.log(tvObjectFunction(2))
+console.log(tvObjectFunction(4))
